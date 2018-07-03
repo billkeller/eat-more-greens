@@ -1,0 +1,35 @@
+/* .container is the overall, centered layout of our site */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*
+mobile first, rows and columns are just
+block level elements, so we don't need to do much here
+*/
+
+.row {}
+.col {
+    border: 1px dotted red;
+}
+
+@media all and (min-width: 400px) {
+    .row {
+        display: flex;
+    }
+
+    .col-1-of-4 {
+        width: 25%;
+    }
+    .col-2-of-4 {
+        width: 50%;
+    }
+    .col-3-of-4 {
+        width: 75%;
+    }
+    .col-4-of-4 {
+        width: 100%;
+    }
+}
+
